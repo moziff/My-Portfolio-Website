@@ -80,6 +80,8 @@ nav a#pull {
 	bottom: -40px;
 	margin-left: -45px;
 }
+
+
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 768px) {
 	nav {

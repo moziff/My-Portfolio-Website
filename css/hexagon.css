@@ -13,10 +13,28 @@
   list-style-type: none;
 }
 
+#portfolio-item-viewer {
+  padding: 4%;
+  border-radius: 25px;
+  background: #000000;
+  margin-top: 8%;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: #000000;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+}
+
+.portfolio-item {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .hex {
   position: relative;
   visibility:hidden;
   outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+
 }
 .hex::after{
   content:'';
@@ -34,6 +52,7 @@
   -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
       -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
           transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 .hexIn * {
   position: absolute;
@@ -50,6 +69,7 @@
     -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
         -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
             transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 /*** HEX CONTENT **********************************************************************/
@@ -68,7 +88,7 @@
   width: 100%;
   padding: 5%;
   box-sizing:border-box;
-  background-color: rgba(0, 128, 128, 0.8);
+  background-color: #2EB398;
   font-weight: 300;
   -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
           transition:          transform .2s ease-out, opacity .3s ease-out;
@@ -111,10 +131,11 @@
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
 @media (min-width:1201px) { /* <- 4-3  hexagons per row */
   #hexGrid{
-    padding-top: 8%;
+    padding-top: 5%;
     padding-right: 4%;
     padding-bottom: 5.5%
   }
+
   .hex {
     width: 25%; /* = 100 / 4 */
   }
@@ -125,7 +146,7 @@
 
 @media (max-width: 1200px) and (min-width:901px) { /* <- 4-3  hexagons per row */
   #hexGrid{
-    padding-top: 8%;
+    padding-top: 5%;
     padding-right: 4%;
     padding-bottom: 5.5%
   }
