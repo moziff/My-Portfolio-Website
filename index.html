@@ -25,6 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- start plugins -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/portfolio-viewer.js"></script>
 	<script>
 		$(function() {
 			var pull 		= $('#pull');
@@ -70,131 +71,80 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <div class="flex-container col-md-8 col-md-offset-2 text-center" >
 	<div id="portfolio-item-viewer">
-		<!-- <object class="portfolio-item" data="http://www.youtube.com/embed/W7qWa52k-nE"
-		width="560" height="315"></object> -->
-		<iframe id="airpano_frame" width="700" height="450" src="http://www.airpano.ru/files/Lazurn_Cap-Ferrat-Villefranche/2-3-2" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" framespacing="0"> </iframe> <br>
-		
+		<object id="portfolio-item" data="http://www.youtube.com/embed/W7qWa52k-nE"
+		width="560" height="315"></object>
+		<!-- <iframe id="airpano_frame" width="700" height="450" src="http://www.airpano.ru/files/Lazurn_Cap-Ferrat-Villefranche/2-3-2" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" framespacing="0"> </iframe> <br> -->
 	</div>
 </div>
-
-<!-- start wmuSlider example1 -->
-<!-- <div class="slider_bg">
-<div class="container">
-		<div class="row slider">
-		<div class="wmuSlider example1">
-			   <div class="wmuSliderWrapper">
-				   <article style="position: absolute; width: 100%; opacity: 0;">
-				  	 	<div class="slider_img text-center">
-				   			<ul class="list-unstyled list_imgs">
-				   				<li>
-
-<a id="fork" target="_blank" href="https://github.com/web-tiki/responsive-grid-of-hexagons">Fork on GitHub</a></li>
-				   			</ul>
-			      </div>
-				   </article>
-				   <article style="position: relative; width: 100%; opacity: 1;">
-				  	 	<div class="slider_img text-center">
-				   			<ul class="list-unstyled list_imgs">
-				   				<li><img src="images/slider1.jpg" alt="" class="responsive"/></li>
-				   			</ul>
-			           	</div>
-				   </article>
-				 </div>
-                <ul class="wmuSliderPagination">
-                	<li><a href="#" class="">0</a></li>
-                	<li><a href="#" class="">1</a></li>
-                </ul>
-			<script src="js/jquery.wmuSlider.js"></script>
-		     <script>
-				 $('.example1').wmuSlider();
-			</script>
-        </div> -->
-				<!-- end wmuSlider example1 -->
 <div class="container-fluid">
 		<ul id="hexGrid">
 			<li class="hex">
 				<div class="hexIn">
-					<a class="hexLink" href="#">
+					<a id="speaktome" class="hexLink" href="#portfolio-item-viewer">
 						<img src="images/speaktome.jpg" alt="" />
-						<h1>This is a title</h1>
-						<p>Some sample text about the article this hexagon leads to</p>
+						<h1>SPEAKtoME-VR</h1>
+						<p>Public speaking practice platform</p>
 					</a>
 				</div>
 			</li>
 			<li class="hex">
 				<div class="hexIn">
-					<a class="hexLink" href="#">
+					<a id="motley" class="hexLink" href="#portfolio-item-viewer">
 						<img src="images/Motley-bedroom.png" alt="" />
-						<h1>This is a title</h1>
-						<p>Some sample text about the article this hexagon leads to</p>
+						<h1>Motley's Harlem Bedroom</h1>
+						<p>Archibald Motley's room during the Harlem Renaissance</p>
 					</a>
 				</div>
 			</li>
       <li class="hex">
         <div class="hexIn">
-          <a id="pac" class="hexLink"  href="#">
+          <a id="pacman" class="hexLink"  href="#portfolio-item-viewer">
             <img src="images/Pac-Man-VR.png" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
+            <h1>Pac-Man VR</h1>
+            <p>3D/VR version of the classic, award-winning game!</p>
           </a>
         </div>
       </li>
+			<li class="hex">
+				<div class="hexIn">
+					<a id="greco" class="hexLink" href="#portfolio-item-viewer">
+						<img src="images/greco-roman-maze.png" alt="" />
+						<h1>Greceo-Roman Maze</h1>
+						<p>Find the coins, Find the Key, Find Freedom!</p>
+					</a>
+				</div>
+			</li>
       <li class="hex">
         <div class="hexIn">
-          <a class="hexLink" href="#">
+          <a id="petpal" class="hexLink" href="#portfolio-item-viewer">
             <img src="images/petpal.png" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
+            <h1>PetPal</h1>
+            <p>A social network for pet owners and their pets</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a id="job" class="hexLink" href="#portfolio-item-viewer">
+            <img src="images/jobTrcker.png" alt="" />
+            <h1>Job-Trcker CRM</h1>
+            <p>Keep tabs on your job outreach</p>
           </a>
         </div>
       </li>
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
+            <img src="images/beach.png" alt="" />
+            <h1>Beach Vacation</h1>
+            <p>Water/Aquatic shader experimentation and seagull flock algorithm</p>
           </a>
         </div>
       </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#">
-            <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#">
-            <img src="https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#">
-            <img src="https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#">
-            <img src="https://farm7.staticflickr.com/6139/5986939269_10721b8017.jpg" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
-          </a>
-        </div>
-      </li>
-
     </ul>
+		<br>
+		<br>
+		<br>
 	</div>
         <div class="clearfix"></div>
       </div>
