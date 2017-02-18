@@ -48,12 +48,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     function changeImage(img_string) {
 
+
         if (img_string == "images/speaktome.jpg")
         {
             document.getElementById("portfolio-modal-img").src = img_string;
+						document.getElementById("modal-title").innerHTML = 'SPEAKtoME-VR';
+						document.getElementById("modal-body").innerHTML = '';
         }
         else if (img_string == "images/Pac-Man-VR.png"){
+
             document.getElementById("portfolio-modal-img").src = img_string;
+						document.getElementById("modal-title").innerHTML = 'Pac-Man VR';
+						document.getElementById("modal-body").innerHTML = '';
+        }
+				else if (img_string == "images/Motley-bedroom.png"){
+            document.getElementById("portfolio-modal-img").src = img_string;
+						document.getElementById("modal-title").innerHTML = "Archibald Motley's Bedroom";
+						document.getElementById("modal-body").innerHTML = '';
+        }
+				else if (img_string == "images/greco-roman-maze.png"){
+            document.getElementById("portfolio-modal-img").src = img_string;
+						document.getElementById("modal-title").innerHTML = 'Greco-Roman Maze';
+						document.getElementById("modal-body").innerHTML = '';
+        }
+				else if (img_string == "images/petpal.png"){
+            document.getElementById("portfolio-modal-img").src = img_string;
+						document.getElementById("modal-title").innerHTML = 'PetPal';
+						document.getElementById("modal-body").innerHTML = '';
+        }
+				else if (img_string == "images/jobTrcker.png"){
+            document.getElementById("portfolio-modal-img").src = img_string;
+						document.getElementById("modal-title").innerHTML = 'Job Tracker Management';
+						document.getElementById("modal-body").innerHTML = '';
+        }
+				else if (img_string == "images/beach.png"){
+            document.getElementById("portfolio-modal-img").src = img_string;
+						document.getElementById("modal-title").innerHTML = 'Take A Virtual Vacation';
+						document.getElementById("modal-body").innerHTML = '';
         }
 
     }
@@ -71,7 +102,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<nav class="top-nav">
 			<ul class="top-nav nav_list">
-				<li><a href="portfolio.html">portfolio</a></li>
+				<li><a href="#hexGrid">portfolio</a></li>
 				<li class="page-scroll"><a href="#about">About</a></li>
 				<li class="logo page-scroll"><a title="hexa" href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a></li>
 			    <li class="page-scroll"><a href="blog.html">blog</a></li>
@@ -88,20 +119,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div id="portfolio-item-viewer">
 		<object id="portfolio-item" data="http://www.youtube.com/embed/W7qWa52k-nE"
 		width="560" height="315"></object>
-		<!-- <iframe id="airpano_frame" width="700" height="450" src="http://www.airpano.ru/files/Lazurn_Cap-Ferrat-Villefranche/2-3-2" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" framespacing="0"> </iframe> <br> -->
 	</div>
 </div>
-
-<!-- <div class="Modal-Background toggle-Modal">
-	<div class="Center-Block Absolute-Center is-Fixed is-Variable Modal" id="Fixed-Modal">
-		<div class="Center-Content">
-			<h4 class="Title">Absolute Center.</h4>
-
-			<p>This box is absolutely centered within the viewport, horizontally and vertically, using only CSS.</p>
-
-		</div>
-	</div>
-</div> -->
 
 <div class="container">
   <div class="modal fade" id="myModal" role="dialog">
@@ -112,14 +131,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="modal-header">
 					<div class="row">
 						<div class="container">
-							<img id="portfolio-modal-img"class="Center-Container Absolute-Center is-Image" src="images/speaktome.jpg" alt="">
+							<img id="portfolio-modal-img"class="Center-Container Absolute-Center is-Image" src="" alt="">
 						</div>
 					</div>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title text-center" style="color: #2EB398">Modal Header</h4>
+          <h4 id="modal-title" class="modal-title text-center" style="color: #2EB398">Modal Header</h4>
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+          <p id="modal-body">Some text in the modal.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -154,7 +173,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</li>
       <li class="hex">
         <div class="hexIn">
-          <a id="pacman" class="hexLink"   data-toggle="modal" data-target="#myModal" onclick="changeImage('images/speaktome.jpg')">
+          <a id="pacman" class="hexLink"   data-toggle="modal" data-target="#myModal" onclick="changeImage('images/Pac-Man-VR.png')">
             <img src="images/Pac-Man-VR.png" alt="" />
             <h1>Pac-Man VR</h1>
             <p>3D/VR version of the classic, award-winning game!</p>
@@ -163,16 +182,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </li>
 			<li class="hex">
 				<div class="hexIn">
-					<a id="greco" class="hexLink"  data-toggle="modal" data-target="#myModal" onclick="">
+					<a id="greco" class="hexLink"  data-toggle="modal" data-target="#myModal" onclick="changeImage('images/greco-roman-maze.png')">
 						<img src="images/greco-roman-maze.png" alt="" />
-						<h1>Greceo-Roman Maze</h1>
+						<h1>Greco-Roman Maze</h1>
 						<p>Find the coins, Find the Key, Find Freedom!</p>
 					</a>
 				</div>
 			</li>
       <li class="hex">
         <div class="hexIn">
-          <a id="petpal" class="hexLink" href="#portfolio-item-viewer">
+          <a id="petpal" class="hexLink" data-toggle="modal" data-target="#myModal" onclick="changeImage('images/petpal.png')">
             <img src="images/petpal.png" alt="" />
             <h1>PetPal</h1>
             <p>A social network for pet owners and their pets</p>
@@ -181,7 +200,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </li>
       <li class="hex">
         <div class="hexIn">
-          <a id="job" class="hexLink" href="#portfolio-item-viewer">
+          <a id="job" class="hexLink" data-toggle="modal" data-target="#myModal" onclick="changeImage('images/jobTrcker.png')">
             <img src="images/jobTrcker.png" alt="" />
             <h1>Job-Trcker CRM</h1>
             <p>Keep tabs on your job outreach</p>
@@ -190,7 +209,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </li>
       <li class="hex">
         <div class="hexIn">
-          <a class="hexLink" href="#">
+          <a id="beach" class="hexLink" data-toggle="modal" data-target="#myModal" onclick="changeImage('images/beach.png')">
             <img src="images/beach.png" alt="" />
             <h1>Beach Vacation</h1>
             <p>Water/Aquatic shader experimentation and seagull flock algorithm</p>
