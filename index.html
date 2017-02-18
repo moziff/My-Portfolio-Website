@@ -23,6 +23,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- start plugins -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/portfolio-viewer.js"></script>
@@ -42,7 +45,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         		}
     		});
 		});
-	</script>
+
+    function changeImage(img_string) {
+
+        if (img_string == "images/speaktome.jpg")
+        {
+            document.getElementById("portfolio-modal-img").src = img_string;
+        }
+        else if (img_string == "images/Pac-Man-VR.png"){
+            document.getElementById("portfolio-modal-img").src = img_string;
+        }
+
+    }
+</script>
 <!----font-Awesome----->
    	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
 <!----font-Awesome----->
@@ -76,21 +91,62 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!-- <iframe id="airpano_frame" width="700" height="450" src="http://www.airpano.ru/files/Lazurn_Cap-Ferrat-Villefranche/2-3-2" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" framespacing="0"> </iframe> <br> -->
 	</div>
 </div>
+
+<!-- <div class="Modal-Background toggle-Modal">
+	<div class="Center-Block Absolute-Center is-Fixed is-Variable Modal" id="Fixed-Modal">
+		<div class="Center-Content">
+			<h4 class="Title">Absolute Center.</h4>
+
+			<p>This box is absolutely centered within the viewport, horizontally and vertically, using only CSS.</p>
+
+		</div>
+	</div>
+</div> -->
+
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog ">
+
+      <!-- Modal content-->
+      <div class="modal-content" style="background-color: #000000">
+        <div class="modal-header">
+					<div class="row">
+						<div class="container">
+							<img id="portfolio-modal-img"class="Center-Container Absolute-Center is-Image" src="images/speaktome.jpg" alt="">
+						</div>
+					</div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center" style="color: #2EB398">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
 <div class="container-fluid">
 		<ul id="hexGrid">
 			<li class="hex">
 				<div class="hexIn">
-					<a id="speaktome" class="hexLink" href="#portfolio-item-viewer">
-						<img src="images/speaktome.jpg" alt="" />
+					<a  class="hexLink"  data-toggle="modal" data-target="#myModal" onclick="changeImage('images/speaktome.jpg')">
+						<img id="speaktome" src="images/speaktome.jpg" alt="" />
 						<h1>SPEAKtoME-VR</h1>
 						<p>Public speaking practice platform</p>
 					</a>
 				</div>
+
 			</li>
 			<li class="hex">
 				<div class="hexIn">
-					<a id="motley" class="hexLink" href="#portfolio-item-viewer">
-						<img src="images/Motley-bedroom.png" alt="" />
+					<a  class="hexLink"  data-toggle="modal" data-target="#myModal" onclick="changeImage('images/Motley-bedroom.png')">
+						<img id="motley" src="images/Motley-bedroom.png" alt="" />
 						<h1>Motley's Harlem Bedroom</h1>
 						<p>Archibald Motley's room during the Harlem Renaissance</p>
 					</a>
@@ -98,7 +154,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</li>
       <li class="hex">
         <div class="hexIn">
-          <a id="pacman" class="hexLink"  href="#portfolio-item-viewer">
+          <a id="pacman" class="hexLink"   data-toggle="modal" data-target="#myModal" onclick="changeImage('images/speaktome.jpg')">
             <img src="images/Pac-Man-VR.png" alt="" />
             <h1>Pac-Man VR</h1>
             <p>3D/VR version of the classic, award-winning game!</p>
@@ -107,7 +163,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </li>
 			<li class="hex">
 				<div class="hexIn">
-					<a id="greco" class="hexLink" href="#portfolio-item-viewer">
+					<a id="greco" class="hexLink"  data-toggle="modal" data-target="#myModal" onclick="">
 						<img src="images/greco-roman-maze.png" alt="" />
 						<h1>Greceo-Roman Maze</h1>
 						<p>Find the coins, Find the Key, Find Freedom!</p>
