@@ -51,38 +51,45 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         if (img_string == "images/speaktome.jpg")
         {
             document.getElementById("portfolio-modal-img").src = img_string;
-						document.getElementById("modal-title").innerHTML = 'SPEAKtoME-VR';
-						document.getElementById("modal-body").innerHTML = '';
+						document.getElementById("modal-title").innerHTML = 'SPEAKtoME-VR (Currently in development)';
+						document.getElementById("learned-skills").innerHTML = "Learned Skills: Text To Speech Recognition, Efficient Parsing of Data, 3D Video  ";
+            document.getElementById("modal-body").innerHTML = 'A platform to cure the phobia of public speaking. Upload your speech text and speak in front of an audience to get your public speaking right every time. Be Fearless!';
         }
         else if (img_string == "images/Pac-Man-VR.png"){
 
             document.getElementById("portfolio-modal-img").src = img_string;
 						document.getElementById("modal-title").innerHTML = 'Pac-Man VR';
+            document.getElementById("learned-skills").innerHTML = "Learned Skills: AI Pathfinding, Tons of 3D Math, QA Testing, Nav-mesh System";
 						document.getElementById("modal-body").innerHTML = '';
         }
 				else if (img_string == "images/Motley-bedroom.png"){
             document.getElementById("portfolio-modal-img").src = img_string;
 						document.getElementById("modal-title").innerHTML = "Archibald Motley's Bedroom";
+            document.getElementById("learned-skills").innerHTML = "Learned Skills: Lighting Experimentation, Shader Experimentation, 3D Modeling";
 						document.getElementById("modal-body").innerHTML = '';
         }
 				else if (img_string == "images/greco-roman-maze.png"){
             document.getElementById("portfolio-modal-img").src = img_string;
 						document.getElementById("modal-title").innerHTML = 'Greco-Roman Maze';
+            document.getElementById("learned-skills").innerHTML = "Learned Skills: VR UI, Waypoint Based Navigation, Procedural Animation, Spatial Audio";
 						document.getElementById("modal-body").innerHTML = '';
         }
 				else if (img_string == "images/petpal.png"){
             document.getElementById("portfolio-modal-img").src = img_string;
 						document.getElementById("modal-title").innerHTML = 'PetPal';
+            document.getElementById("learned-skills").innerHTML = "Learned Skills: Text To Speech Recognition, Efficient Parsing of Data, 3D Video  ";
 						document.getElementById("modal-body").innerHTML = '';
         }
 				else if (img_string == "images/jobTrcker.png"){
             document.getElementById("portfolio-modal-img").src = img_string;
 						document.getElementById("modal-title").innerHTML = 'Job Tracker Management';
+            document.getElementById("learned-skills").innerHTML = "Learned Skills: Text To Speech Recognition, Efficient Parsing of Data, 3D Video  ";
 						document.getElementById("modal-body").innerHTML = '';
         }
 				else if (img_string == "images/beach.png"){
             document.getElementById("portfolio-modal-img").src = img_string;
 						document.getElementById("modal-title").innerHTML = 'Take A Virtual Vacation';
+            document.getElementById("learned-skills").innerHTML = "Learned Skills: Water/Liquid Shaders, Particle Effects, Persistent Storage of Session Data, VR Interaction";
 						document.getElementById("modal-body").innerHTML = '';
         }
 
@@ -142,10 +149,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</div>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 id="modal-title" class="modal-title text-center" style="color: #2EB398">Modal Header</h4>
+          <br>
+          <h4 id="modal-title" class="modal-title text-center" style="color: #ffffff">Modal Header</h4>
         </div>
-        <div class="modal-body">
-          <p id="modal-body">Some text in the modal.</p>
+        <div class="modal-body" style="color: #ffffff">
+          <h4 id="learned-skills">Some text in the modal.</h4>
+          <p id="modal-body">here is text</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -198,6 +207,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</li>
       <li class="hex">
         <div class="hexIn">
+          <a id="beach" class="hexLink" data-toggle="modal" data-target="#myModal" onclick="changeImage('images/beach.png')">
+            <img src="images/beach.png" alt="" />
+            <h1>Beach Vacation</h1>
+            <p>Water/Aquatic shader experimentation and seagull flock algorithm</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
           <a id="petpal" class="hexLink" data-toggle="modal" data-target="#myModal" onclick="changeImage('images/petpal.png')">
             <img src="images/petpal.png" alt="" />
             <h1>PetPal</h1>
@@ -211,15 +229,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <img src="images/jobTrcker.png" alt="" />
             <h1>Job-Trcker CRM</h1>
             <p>Keep tabs on your job outreach</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a id="beach" class="hexLink" data-toggle="modal" data-target="#myModal" onclick="changeImage('images/beach.png')">
-            <img src="images/beach.png" alt="" />
-            <h1>Beach Vacation</h1>
-            <p>Water/Aquatic shader experimentation and seagull flock algorithm</p>
           </a>
         </div>
       </li>
