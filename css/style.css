@@ -10,12 +10,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 body {
 	font-family: 'open_sansregular';
-	background:#ffffff;
 	font-size: 100%;
+  background-image: url("http://4answered.com/assets/images/HiRes5.jpg");
 }
 /* start header */
 .header_bg{
-	background: #323232;
+	background: #000000;
 }
 .h_logo{
 	display: none;
@@ -202,7 +202,7 @@ nav a#pull {
 }
 /* start about us */
 .main_bg{
-	background: #2EB398;
+	background: #000000;
 }
 .about{
 	margin:20px 0;
@@ -278,10 +278,12 @@ box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.75);
 }
 /* start footer */
 .footer_bg{
-	background: #353535;
+	background: #000000;
 }
 .footer{
 	padding: 4%;
+    border-left: 1px solid #248E78;
+    border-right: 1px solid #248E78;
 }
 .contact_left h3{
 	font-family: 'Kreon', serif;
