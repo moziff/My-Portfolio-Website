@@ -77,13 +77,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				else if (img_string == "images/petpal.png"){
             document.getElementById("portfolio-modal-img").src = img_string;
 						document.getElementById("modal-title").innerHTML = 'PetPal';
-            document.getElementById("learned-skills").innerHTML = "Learned Skills: Text To Speech Recognition, Efficient Parsing of Data, 3D Video  ";
+            document.getElementById("learned-skills").innerHTML = "petpals.herokuapp.com";
 						document.getElementById("modal-body").innerHTML = '';
         }
 				else if (img_string == "images/jobTrcker.png"){
             document.getElementById("portfolio-modal-img").src = img_string;
 						document.getElementById("modal-title").innerHTML = 'Job Tracker Management';
-            document.getElementById("learned-skills").innerHTML = "Learned Skills: Text To Speech Recognition, Efficient Parsing of Data, 3D Video  ";
+            document.getElementById("learned-skills").innerHTML = "getjobtracker.herokuapp.com";
 						document.getElementById("modal-body").innerHTML = '';
         }
 				else if (img_string == "images/beach.png"){
@@ -111,9 +111,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<ul class="top-nav nav_list">
 				<li><a href="#hexGrid">portfolio</a></li>
 				<li class="page-scroll"><a href="#about">About</a></li>
-				<li class="logo page-scroll"><a title="hexa" href="index.html"><h2 style="color: #2EB398">MZ</h2></a></li>
-			    <li class="page-scroll"><a href="blog.html">blog</a></li>
-				<li class="page-scroll"><a href="#contact">get in touch</a></li>
+				<li class="logo page-scroll" style="padding-right: 10px;"><a title="hexa" href="index.html"><h2 style="color: #2EB398">MZ</h2></a></li>
+			    <li class="page-scroll"><a href="https://drive.google.com/file/d/0By-VAD_gb__RQzB4UmI2WUVsbUE/view?usp=sharing">resume </a></li>
+				<li class="page-scroll"><a href="#contact">Contact </a></li>
 			</ul>
 			<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
 		</nav>
@@ -125,8 +125,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="flex-container col-md-8 col-md-offset-2 text-center" >
 	<div id="portfolio-item-viewer">
 		<!-- https://www.youtube.com/watch?v=p9h3ZqJa1iA -->
-		<iframe width="560"
-	height="315"
+		<iframe width="80%"
+	height="350"
 	allowfullscreen
 	frameborder="0"
 	src="https://www.youtube.com/v/t2vgl4Vvdtg">
@@ -153,8 +153,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <h4 id="modal-title" class="modal-title text-center" style="color: #ffffff">Modal Header</h4>
         </div>
         <div class="modal-body" style="color: #ffffff">
-          <h4 id="learned-skills">Some text in the modal.</h4>
-          <p id="modal-body">here is text</p>
+          <h4 id="learned-skills"></h4>
+          <p id="modal-body"></p>
+          <a id="modal-href"href="#"></a>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
