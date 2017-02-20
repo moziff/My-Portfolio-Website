@@ -10,8 +10,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 body {
 	font-family: 'open_sansregular';
+	background:#ffffff;
 	font-size: 100%;
-  background-image: url("http://4answered.com/assets/images/HiRes5.jpg");
 }
 /* start header */
 .header_bg{
@@ -72,7 +72,7 @@ nav a#pull {
 	position: absolute;
 	width: 0;
 	height: 0;
-	border: 40px solid #323232;
+	border: 40px solid #000000;
 	border-bottom: 0 solid rgba(0, 0, 0, 0)!important;
 	border-right: 40px solid rgba(0, 0, 0, 0)!important;
 	border-left: 40px solid rgba(0, 0, 0, 0)!important;
@@ -202,7 +202,7 @@ nav a#pull {
 }
 /* start about us */
 .main_bg{
-	background: #000000;
+	background: #2EB398;
 }
 .about{
 	margin:20px 0;
@@ -278,12 +278,10 @@ box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.75);
 }
 /* start footer */
 .footer_bg{
-	background: #000000;
+	background: #353535;
 }
 .footer{
 	padding: 4%;
-    border-left: 1px solid #248E78;
-    border-right: 1px solid #248E78;
 }
 .contact_left h3{
 	font-family: 'Kreon', serif;
